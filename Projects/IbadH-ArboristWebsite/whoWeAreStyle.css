@@ -1,0 +1,47 @@
+/* styling the main container that encompases all the exclusive content on this page */
+    .main {
+        align-self: center;
+        margin-top: 4vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        
+        display: flex;
+        align-items: top;
+        justify-content: center;
+        gap: 1vw;
+
+        background-color: rgba(27, 23, 25, 0.7);
+        color: #d4d6d5;
+        padding: 2vw;
+        border-radius: 0.5vw;
+    }
+
+    .main > div {
+        margin: 1vw;
+    }
+
+    .main h1 {
+        font-family: Kostania;
+        font-size: 5vw;
+        line-height: 0;
+    }
+
+    .main p {
+        font-family: Neue June;
+        max-width: 40vw;
+        line-height: 1,4;
+        word-spacing: 0.1rem;
+        font-size: 1.2vw;
+    }
+
+    .main h2 {
+        font-family: Neue June;
+        word-spacing: 0.1rem;
+        text-align: center;
+        line-height: 0;
+    }
+
+    .main video {
+        width: 100%;
+        border-radius: 0.5vw;
+    }

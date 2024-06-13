@@ -1,0 +1,169 @@
+/* styling for the home page exclusive elements */
+
+/* setting the position and display for the top tab (front cover tab)*/
+.topTab{
+    position: relative;
+    display: flex;
+    flex: auto;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 4vw;
+    margin-top: 4vw;
+}
+
+    .topTab > h2{
+        font-family: Kostania;
+        font-size: 9vw;
+        line-height: 6vw;
+        color: #d4d6d5;
+        background-color: rgba(27, 23, 25, 0.7);
+        height: min-content;
+        padding: 6vw;
+        border-radius: 0.5rem;
+        margin-left: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        row-gap: 0;
+
+    }
+
+    .learnMore{
+        text-decoration: none;
+        font-family: Kostania;
+        font-size: 2.5vw;
+        margin-left: 1rem;
+        border: none;
+        color:#d4d6d5;
+        background-color: #2f4633;
+        padding: 0.6vw;
+        padding-top: 0.9vw;
+        border-radius: 0.5rem; 
+        transition: transform 150ms ease-in-out;
+    }
+
+
+/* setting the styling for the middle container (why us section) */
+.midTab {
+    display: flex;
+    padding: 0.5rem;
+    background-color: rgba(27, 23, 25, 0.7);
+    align-items: top;
+    justify-content: left;
+    padding: 3rem;
+    margin-left: 1rem; 
+    margin-right: 1rem; 
+    border-radius: 0.5rem;
+} 
+
+    .whyUs {
+        color: #d4d6d5;
+    }
+
+    .whyUs > h2 {
+        font-family: Kostania;
+        font-size: 4vw;
+        line-height: 0;
+        text-align: center;
+    }
+
+    .whyUs > p {
+        font-family: Neue June;
+        font-size: 1.1vw;
+
+        word-spacing: 0.1rem;
+        line-height: 1.4;
+
+
+    }
+
+    .whyUs > img {
+        float: right;
+        height: 80%;
+        max-width: 50vw;
+        margin-left: 1rem;
+        border-radius: 0.5rem;
+        opacity: 80%;
+        background-color: black;
+    }
+
+    .whyUs > button {
+        text-decoration: none;
+        border: none;
+        margin-left: 0.5vw;
+        padding: 0.5vw;
+        padding-top: 0.8vw;
+        border-radius: 0.2vw;
+        font-family: Kostania;
+        font-size: 1.5vw;
+        background-color: #2f4633;
+        color: #d4d6d5;
+        transition: all 150ms ease-in-out;  
+        
+    }
+
+
+/* styling for the bottom tab (services display) */
+.lowerTab {
+    padding: 0.5rem;
+    background-color: rgba(27, 23, 25, 0.7);
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 4vw; 
+    border-radius: 0.5rem;
+}
+
+    .lowerTab div {
+        font-family: Kostania;
+        color:#d4d6d5;
+        font-size: 1.5vw;
+        line-height: 0.5;
+        text-align: center;
+    }
+
+    .lowerContent{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .LM1, .LM2, .LM3, .LM4{
+        width: 20vw;
+        height: 8vw;
+        font-family: Kostania;
+        font-size: 1vw;
+        color:#d4d6d5;
+        text-align: center;
+        line-height: 0.6;
+
+        background-size: 100%;
+        
+        padding: 2rem;
+        border-radius: 0.5rem;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+
+    }
+
+    .LM1 {background-image: linear-gradient( rgba(27, 23, 25, 0.6), rgba(27, 23, 25, 0.6) ), url("landscpBG.webp");}
+    .LM2 {background-image: linear-gradient( rgba(27, 23, 25, 0.6), rgba(23, 23, 25, 0.6) ), url("treeWorker.webp");}
+    .LM3 {background-image: linear-gradient( rgba(27, 23, 25, 0.6), rgba(27, 23, 25, 0.6) ), url("shrubMaintBg.webp");}
+    .LM4 {background-image: linear-gradient( rgba(27, 23, 25, 0.6), rgba(27, 23, 25, 0.6) ), url("treeRemoval.webp");}
+
+    .lowerContent > div > button {
+        text-decoration: none;
+        font-family: Kostania;
+        font-size: 1.5vw;
+        border: 2px solid #d4d6d5;
+        color:#d4d6d5;
+        padding-top: 0.6rem;
+        background: none;
+        border-radius: 0.3rem; 
+        transition: transform 150ms ease-in-out;
+
+    }
+
+    .learnMore:hover, .lowerContent > div > button:hover, .whyUs > button:hover{
+        transform: scale(1.05, 1.05);  
+        background-color: #d4d6d5;
+        color: #2f4633;
+    }

@@ -1,0 +1,70 @@
+/* styling the Top container on the tree maint page*/
+    .topTab {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(27, 23, 25, 0.7);
+        padding: 2vw;
+        border-radius: 0.5vw;
+        color: #d4d6d5;
+
+    }
+
+    .topTab h2 {
+        font-family: Kostania;
+        font-size: 3.5vw;
+        margin: 0;
+    }
+
+    .topTab > p {
+        font-family: Neue June;
+        word-spacing: 0.1rem;
+        line-height: 1.4;
+        font-size: 1.3vw;
+        margin: 0;
+
+    }
+
+
+    .topTab ul {
+        list-style-type:none;
+        font-family: Neue June;
+        word-spacing: 0.1rem;
+        line-height: 0.5;
+        padding-left: 1vw;
+        margin: 0;
+
+    }
+
+/* styling the elements within the list in the top tab */
+    .topTab ul h3 {
+        max-width: max-content;
+        font-size: 1.3vw;
+        background-color: #2f4633;
+        color: #d4d6d5;
+        padding: 1vw;
+        border-radius: 0.25vw;
+    }
+
+
+    .main li {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .main li p {
+        font-family: Neue June;
+        word-spacing: 0.1rem;
+        line-height: 1.4;
+        font-size: 1.1vw;
+
+        margin: 0;
+        margin-bottom: 1vw;
+    }
+
+    .main li img {
+        float: right;
+        width: 20vw;
+        border-radius: 0.5rem;
+        margin-left: 2vw;
+
+    }

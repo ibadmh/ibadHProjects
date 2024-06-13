@@ -1,0 +1,12 @@
+/* Importing all css files onto this, so only one file is needed to be linked */
+@import url(CSS/layout.css);
+@import url(CSS/base.css);
+@import url(CSS/module.css);
+@import url(CSS/state.css);
+
+/* IMPORTANT: 
+    vw: a unit that is relative to the width of the browser window width, with 1 being 1%
+    of the total window width. I use this unit to make the size of the elements 
+    relative to the size of the window 
+    fr: A relative unit used for grids
+*/

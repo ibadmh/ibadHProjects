@@ -1,0 +1,111 @@
+/* a general stylesheet for all the service pages as they are quite similar in layout and design */
+/* all the services pages have the same layout and thus the same classes for each tab meaning the same styling can apply to each one */
+.main {
+    border-radius: 0.5vw;
+    margin: 1vw;
+    margin-top: 4vw;
+    color: #d4d6d5;
+}
+
+.main h1 {
+    font-family: Kostania;
+    font-size: 5vw;
+    text-align: center;
+
+    background-color: rgba(27, 23, 25, 0.7);
+    padding: 4vw;
+    border-radius: 0.5vw;
+    margin-top: 0;
+
+}
+
+.whatWeOffer {
+    display: flex;
+    column-gap: 3vw;
+
+    background-color: rgba(27, 23, 25, 0.7);
+    padding: 2vw;
+    border-radius: 0.5vw;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.whatWeOffer p {
+    width: 45vw;
+    font-family: Neue June;
+    word-spacing: 0.1rem;
+    line-height: 1.4;
+    font-size: 1.2vw;
+}
+
+.whatWeOffer h2, .whyUs h2{
+    width: 25vw;    
+    font-family: Kostania;
+    font-size: 4vw;
+    text-align: center;
+    line-height: 3.5vw;
+    margin-right: 2vw;
+}
+
+.whatWeOffer ul{
+    font-family: Neue June;
+    word-spacing: 0.1rem;
+    line-height: 1.4;
+
+    font-size: 1vw;
+
+}
+
+.whyUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(27, 23, 25, 0.7);
+    padding: 2vw;
+    border-radius: 0.5vw;
+    margin-top: 4vw;
+}
+
+.whyUs img {
+    max-width: 30vw;
+    height: 80%;
+    float: right;
+    margin-left: 1vw;
+    border-radius: 0.25vw;
+    margin-top: 2.25vw;
+}
+
+.whyUs p {
+    width: 33vw;
+    font-family: Neue June;
+    word-spacing: 0.1rem;
+    line-height: 1.4;
+    font-size: 1.2vw;
+}
+
+.whyUs button {
+    text-decoration: none;
+    font-family: Kostania;
+    background-color: #2f4633;
+    color: #d4d6d5;
+    border: none;
+    font-size: 1.75vw;
+    border-radius: 0.25vw;
+    padding: 0.3vw;
+    padding-top: 0.6vw;
+    transition: all 150ms ease-in-out;
+    margin-left: 0.2vw;
+}
+
+.whyUs button:hover {
+    transform: scale(1.05, 1.05);
+    background-color: #d4d6d5;
+    color: #2f4633;
+}
+
+
+
+
+

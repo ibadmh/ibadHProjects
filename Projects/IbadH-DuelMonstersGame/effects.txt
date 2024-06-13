@@ -1,0 +1,10 @@
+-1000 opponent health
++1000 attack
++1000 attack
++500 player health
+-500 opponent health
++1000 player health
++1000 defence
+-1000 opponent health
++1000 attack
+-500 opponent health

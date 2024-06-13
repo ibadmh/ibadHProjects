@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prcing Quote - Tree Keepers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="FormStyle.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div>
+        <div class="menu">
+            
+            <div class="title"><h1><a href="index.html">THE TREE KEEPERS</a></h1></div>
+            
+            <div class="dropdown">
+            
+                <button class="link">Services</button>
+            
+                <div class="dropdown-menu">
+                        <a href="landscaping.html" class="dropdown-links">Landscaping</a>
+                        <a href="shrubMaint.html" class="dropdown-links"><br>Shrub Maintenance</a>
+                        <a href="treeMaint.html" class="dropdown-links"><br>Tree Maintenance</a>
+                        <a href="riskAssess.html" class="dropdown-links"><br>Risk Assessment</a>
+                </div> 
+            
+            </div>
+            
+            <div class="dropdown">
+            
+                <button class="link">About Us</button>
+            
+                <div class="dropdown-menu">
+            
+                    <a href="whoWeAre.html" class="dropdown-links">Who we are</a>
+                    <a href="ourMission.html" class="dropdown-links"><br>Our Mission</a>
+            
+                </div>
+            
+            </div>
+            
+            <a class="link" href="contactUs.html">Contact Us</a>
+
+            <div class="getAQuote">
+                <a href="form.html">Get a Quote</a>
+            </div>
+
+        </div>
+
+        <div class="form">
+            <form action="result.html" method="GET">
+                
+                <div>
+                    <label for="fname">First Name*</label>
+                    <input name="fname" id="fname" type="text" placeholder="First Name" required>
+
+                    <label for="lname">Last Name*</label>
+                    <input name="lname" id="lname" type="text" placeholder="Last Name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email*</label>
+                    <input name="email" id="email" type="email" placeholder="e.g. example@example.ca" required>
+
+                    <label for="phone">Phone Number*</label>
+                    <input name="phone" id="phone" type="tel" placeholder="e.g. 123-456-7890" required>
+                </div>
+
+                <div>
+                    <label for="streetAd">Street Address*</label>
+                    <input name="streetAd" id="streetAd" type="text" placeholder="e.g. 123 1 Ave North" required>
+                    <label for="postal">Postal Code*</label>
+                    <input name="postal" id="postal" type="text" placeholder="e.g. A1A 1A1" required>
+                    <label for="city">City*</label>
+                    <input name="city" id="city" type="text" placeholder="e.g. Calgary" required>
+                </div>
+                
+
+
+                <div class="lastDiv">
+                    <div>
+                        <label>Services Interested In:</label>
+                        <div class="checkbox">
+                            <div>
+                                <input name="services" id="services" type="checkbox">
+                                <label for="services">Landscaping</label>
+                            </div>
+                            <div>
+                                <input name="services" id="services" type="checkbox">
+                                <label for="services">Tree Maintenance</label>
+                            </div>
+                            <div>
+                                <input name="services" id="services" type="checkbox">
+                                <label for="services">Shrub Maintenance</label>
+                            </div>
+                            <div>
+                                <input name="services" id="services" type="checkbox">
+                                <label for="services">Assessment</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
+
+
+            </form>
+        </div>
+
+        <footer>
+            <div>
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="landscaping.html">Landscaping</a></li>
+                    <li><a href="shrubMaint.html">Shrub Maintenance</a></li>
+                    <li><a href="treeMaint.html">Tree Maintenance</a></li>
+                    <li><a href="riskAssess.html">Risk Assessment</a></li>
+                </ul>
+            </div>
+        
+            <div>
+            <h3>About Us</h3>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="whoWeAre.html">Who We Are</a></li>
+                    <li><a href="ourMission.html">Our Mission</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="contactUs.html">Locations/Contact Information</a></li>
+                    <li><a href="form.html">Get a prcing quote</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

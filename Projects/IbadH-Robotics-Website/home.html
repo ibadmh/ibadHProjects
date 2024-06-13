@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mandela United Squadron</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- The top navigation header for the sites pages. This includes the directory for the pages, a logo with a home page link and an application form link -->
+        <div id="l-navBar" class="l-flex">
+            <!-- Home pg link and team logo -->
+            <a href="home.html">
+                <img src="Images/title.webp" alt="Team 7277 Logo" id="title">
+            </a>
+
+            <!-- menu - main 4 buttons for the non form pages -->
+            <div id="l-menu" class="l-flex">
+                <button onclick="window.location.href='about.html'">About</button>
+                <button onclick="window.location.href='team.html'">Team Structure</button>
+                <button onclick="window.location.href='branding.html'">Branding</button>
+                
+                <!-- dropdown menu for history of the club - dropdowns to show links to articles on the clubs history -->
+                <div class="dropdown">
+                    <button class="navButton">History</button>
+
+                    <div class="dropdownMenu l-flex">
+                        <a
+                            href="https://calgary.ctvnews.ca/calgary-kids-living-with-cancer-learn-about-robotics-at-camp-amazon-1.4609872">2019-20</a>
+                        <a
+                            href="https://drive.google.com/file/d/1l23pnSAd-9igd7EMUvhV2JAID5hQ_aik/view">2018-19</a>
+                        <a
+                            href="https://drive.google.com/file/d/1XH-y8GQDmfXnm1LfutBTBr3mTeZJMCCJ/view">2017-18</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- button that directs user to application form -->
+            <div id="l-navButton">
+                <button onclick="window.location.href='join.html'">Join the Squadron</button>
+            </div>
+        </div>
+
+        <!-- main class with the rest of the content in the page -->
+        <div id="main" class="l-flex">
+            <div> <!-- This div encompases the main content of the page, allows for the "space-between" justification to keep the main content spaced away from the footer-->
+                <div id="l-topTabH"> <!-- The top tab for the home page, showing title, a small description and a button to the about us page -->
+                    <!-- video background on the top tab -->
+                    <video autoplay muted loop id="myVideo">
+                        <source src="vid.mp4" type="video/mp4">
+                    </video>
+
+                    <!-- content on top of the video -->
+                    <div class="content l-flex">
+                        <div>
+                            <h1>NMHS United Squadron</h1>
+                            <p>Welcome to the home of the Nelson Mandela United
+                                Squadron. The Squadron is home to
+                                Nelson Mandela's several First Competition Teams.
+                            </p>
+                            <button onclick="window.location.href='about.html'">LEARN
+                                MORE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- all content that doesn't have a video background -->
+                <div id="nonVidMain">
+                    <!-- mid tab with team images -->
+                    <div id="l-midTabH" class="l-flex">
+                        <h1>The Teams</h1>
+                        <div class="l-flex">
+                            <img src="Images/title.webp" alt="7277">
+                            <img src="Images/14717.webP" alt="14717">
+                            <img src="Images/15259.webp" alt="15259">
+                        </div>
+                    </div>
+                    <!-- low tab with team pic slideshow -->
+                    <div id="l-lowTabH" class="l-flex">
+                        <!-- title and text beside slideshow -->
+                        <div>
+                            <h1>Team Photos</h1>
+                            <p>Many photos taken to log the amazing journeys our
+                                Squadron has had over the
+                                past few years.
+                            </p>
+                        </div>
+                        <!-- team photo gallery -->
+                        <div class="team">
+                            <div class="slideshow" aria-label="Image Slideshow">
+                                <!-- image groups 1-4 -->
+                                <div class="mySlides fade l-flex">
+                                    <img src="Images/HomePG-Gallery/1.webp">
+                                    <img src="Images/HomePG-Gallery/2.webp">
+                                </div>
+
+                                <div class="mySlides fade l-flex">
+                                    <img src="Images/HomePG-Gallery/3.webp">
+                                    <img src="Images/HomePG-Gallery/4.webp">
+                                </div>
+
+                                <div class="mySlides fade l-flex">
+                                    <img src="Images/HomePG-Gallery/5.webp">
+                                    <img src="Images/HomePG-Gallery/6.webp">
+                                </div>
+
+                                <div class="mySlides fade l-flex">
+                                    <img src="Images/HomePG-Gallery/7.webp">
+                                    <img src="Images/HomePG-Gallery/8.webp">
+                                </div>
+
+                                <!-- buttons for back and next -->
+                                <button title="Previous" class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                                <button title="Next" class="next" onclick="plusSlides(1)">&#10095;</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- images for team sponsors -->
+                    <div id="l-bottomTabH" class="l-flex">
+                        <div>
+                            <img src="Images/amazon.webp" alt="amazon">
+                            <img src="Images/finning.webp" alt="finning">
+                            <img src="Images/genesis.webp" alt="genesis centre">
+                            <img src="Images/telus.webp" alt="telus">
+                            <img src="Images/uTech.webp" alt="U Technology">
+                            <img src="Images/alberta.webp" alt="Alberta Community
+                                and Social Services">
+                        </div>
+                        <!-- title for tab -->
+                        <h1>Our Supporters</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer - has links for all pages (except form result) with home page link as title img -->
+            <div id="l-footer" class="l-flex">
+                <!-- Title logo thats clickable and directs you to the home page -->
+                <a href="home.html">
+                    <img src="Images/title.webp" alt="Team 7277 Logo" id="title">
+                </a>
+                <!-- Flex container wiht the links to all pages and more -->
+                <div class="l-flex">
+                    <ul>
+                        <!-- all page links -->
+                        <h2>Information</h2>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="branding.html">Branding</a></li>
+                        <li><a href="team.html">Team Structure</a></li>
+                        <li><a href="join.html">Join Us</a></li>
+                    </ul>
+                    <ul>
+                        <!-- all history article links -->
+                        <h2>History</h2>
+                        <li>
+                            <a href="https://calgary.ctvnews.ca/calgary-kids-living-with-cancer-learn-about-robotics-at-camp-amazon-1.4609872">2019-20</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1l23pnSAd-9igd7EMUvhV2JAID5hQ_aik/view">2018-19</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1XH-y8GQDmfXnm1LfutBTBr3mTeZJMCCJ/view">2017-18</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <!-- social media links -->
+                        <li>
+                            <a href="https://www.instagram.com/team.7277/" class="symbol">
+                                <img src="Images/Symbols/Instagram.webp" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/7277MandelaFRC" class="symbol">
+                                <img src="Images/Symbols/Twitter.webp" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@user-mx6wq2uo8i" class="symbol">
+                                <img src="Images/Symbols/Youtube.webp" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>

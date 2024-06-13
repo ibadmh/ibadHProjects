@@ -1,0 +1,35 @@
+/* STATE: This file includes all the interactive styles that aren't constant and vary based on 
+several elements such as hover, active or the page selected */
+
+/* wheen any button except the LM buttons are hovered on (so the buttons on the nav bar), their font 
+colour becomes red, with a bottom 0.15 solid red border and grows to 1.03x its original size. This is also 
+activated for the active class, so the button for the page opened will change to how it 
+is in its hover state */
+    button:not(.LM1, .LM2):hover, .active {
+        color: #802827;
+        border-bottom: 0.15vw #802827 solid;
+        transform: scale(1.03, 1.03);
+    }
+
+/* when LM1 (the one for white font and black bg) is hovered on, the colour becomes red, bg colour 
+becomes white and its 1.05x its original size. Inversely, when LM2 (the one for black font and white bg) is 
+hovered on, the colour becomes red, bg colour becomes black and its 1.05x its original size*/
+    .LM1:hover {
+        color: #802827;
+        transform: scale(1.05, 1.05);
+        background-color: #d9d9d9;
+    }
+
+    .LM2:hover {
+        color: #802827;
+        transform: scale(1.05, 1.05);
+        background-color: #0f1012;     
+    }
+
+/* When any link in the footer tab is clicked on, the font colour becomes red */
+    #l-footer a:active { color: #802827; }
+
+/* When the investor divs are hovered on, the div and its elements are raised by 0.5vw */
+    .investor:hover { transform: translateY(-0.5vw); }
+
+

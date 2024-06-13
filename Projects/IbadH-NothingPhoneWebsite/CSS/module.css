@@ -1,0 +1,137 @@
+/* MODULE: The purpose of this file is to style all the elements inside each layout module and the smaller 
+modules within the layout modules. This is essentially the most important file as it determines the fine details
+of the website */
+
+/* Stylimg the paragraph tag on the bottom tab of the home page (introducing the founder) to having a width 
+of 35% of the window width */
+    #l-bottomTab p { width: 35vw; }
+
+/* White font and Black font classes that are used alternatingly in the layout tabs that determine the font 
+colour and background colour. This means that a layout tab with the wFont class will have a font colour of 
+white and default black background, but a l-tab with the bFont class will have a font colour of black (the 
+same as the bg) and a background colour of white (same as the wFont font colour):*/
+    .wFont {color:#d9d9d9}
+
+    .bFont {
+        color:#0f1012;
+        background-color: #d9d9d9;
+    }
+
+/* Styling the clickable buttons (that direct to the other pages) to have a gap of 2.5 vw between them */
+    #menu { gap: 2.5vw; }
+
+/* Styling the image widths for the images on the home page:
+    - Cover image of the phone has width of 60% of window width */
+        #l-topTab img {width: 60vw;}
+
+    /*- Ear Bud image on the second tab (midTab) has width of 40% of window width */
+        #l-midTab img { width: 40vw;}
+
+    /*- Founder (Carl Pei) on the last tab before the footer (bottom tab) has a width of 
+        30% of the window width*/
+        #l-bottomTab img { width: 30vw}
+
+/* Styling the header 1 tag for the Nav bar (l-header) and the top cover tab (l-toptab) to font-sizes: 
+    - Toptab h1 to 4vw font-size*/
+        #l-topTab h1 { font-size: 4vw; }
+/*  - Nav bar h1 to 1.5 vw font-size*/
+        #l-header h1 { font-size: 1.5vw; }
+
+/* Styling the learn more buttons, 1 being for wFont tabs and 2 being for bFont tabs:
+    - adding a 0.15vw white solid border
+    - 0.5vw padding and 0.25vw margin, with a 1vw top margin */
+        .LM1, .LM2 {
+            border: 0.15vw #d9d9d9 solid;
+            padding: 0.5vw;
+            margin: 0.25vw;
+            margin-top: 1vw;
+        }
+
+/* overriding the LM2 border colour to black because the bg on bFont tabs is white*/
+.LM2 { border-color: #0f1012 !important; }
+
+/* Styling the phone page cover image and the audio page cover image to a width of 35vw */
+    #l-topTab2 img, #l-topTab4 img   {width: 35vw;}
+
+/* Styling the h1 tags on the Phone page top tab and the Audio page top tab to 6.5vw font size and 
+reducing the word spacing by 1.8 vw */
+    #l-topTab2 h1, #l-topTab4 h1 {
+        font-size: 6.5vw;
+        word-spacing: -1.8vw;
+    }
+
+/* Styling the h1 tags on the home page mid tab (the one showing the ear(1) product) and the 
+top tab on the about us page (the one showing the about us info) to have a:
+    - 4vw font-size
+    - reducing word spacing by 1.3vw */
+        #l-midTab2 h1, #l-topTab3 h1 {
+            font-size: 4vw; 
+            word-spacing: -1.3vw;}
+
+/* Styling the img and paragraph tags on the phone page mid tab (showing the desing inspiration) to have a 
+30 vw width and align text to right */
+#l-midTab2 img, #l-midTab2 p {width: 30vw; text-align: right;}
+
+/* phoneSpecs grid: the grid for the Specs shown on the Phone page. Styling that to have a:
+    - Grid display
+    - 3 columns: one with auto width (the phone img), one width 27vw width, one with 35vw width 
+    - 2 rows, both with auto height
+    - justifying and aligning content to center
+    - 2vw gap between all grid elements*/
+        #phoneSpecs {
+            display: grid;
+            grid-template-columns: auto 27vw 35vw;
+            grid-template-rows: repeat(2, auto);
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+        }
+
+    /* Also styling the img in the grid to span the whole column (all rows in that column) by spanning it 
+    from row 1 (top row) and row -1 (bottom row). Also giving a width of 13vw */
+        #phoneSpecs > img {
+            grid-row: 1 / -1;
+            width: 13vw;
+        }
+
+/* Styling the paragraph tag on the top of the about us page to have a width of 35vw and 1.2vw font-size */
+    #l-topTab3 p { width: 35vw; font-size: 1.2vw; }
+
+/* Styling the image on the top tab of the about us page to have a 30vw width */
+    #l-topTab3 img {width: 30vw;}
+
+/* Styling the p tag on the bottom of the about us page (showing the occupations of the investors) to 
+have a 0.7vw*/
+    #l-bottomTab3 p {font-size: 0.7vw;}
+
+/* Styling the div inside the bottom tab div (the flex div showing the investors) 
+to align the items to one top line */
+    #l-bottomTab3 .l-flex {align-items: baseline;}
+
+/* Styling the investor class (a class for each div of the investors) and the image of the investors 
+to have a 10vw width */
+    .investor, .investor img {width: 10vw;}
+
+/* Ear Specs Grid: The grid for the Ear(1) specs tab on the audio page to have: 
+    - Grid Display
+    - 3 columns: 1 auto width, 2 17vw width
+    - 2 rows: auto height
+    - 2vw gap between all grid elements*/
+        #earSpecs {
+            display: grid;
+            grid-template-columns: auto repeat(3, 17vw);
+            grid-template-rows: repeat(2, auto);
+            gap: 2vw;
+        }
+
+    /* Also changing the li tag font-size to 0.9 vw */
+        #earSpecs li {font-size: 0.9vw;}
+
+    /* Styling the image to span all the rows and have a 20vw width */
+        #earSpecs img {
+            grid-row: 1 / -1; 
+            width: 20vw;
+        }
+
+
+

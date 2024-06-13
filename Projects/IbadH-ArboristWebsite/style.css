@@ -1,0 +1,215 @@
+/* Setting up custom fonts: */
+
+    @font-face {
+        font-family:"Kostania";
+        src: url("Kostania-Bold.ttf");
+    }
+
+    @font-face {
+        font-family:"Neue June";
+        src: url("neueJuneThin.otf");
+        font-weight: bold;
+        
+    }
+
+/* Overall body styling to set the dimensions, bg-img and bg-img size */
+    body{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: #d4d6d5;
+        background-image: url("bgIMG.webp");
+        background-size: 100vw;
+    }
+
+/* Main container with all the content, setting its display to column flex, and 
+justifying the content to space between so the footer and the header are always at the bottom and top */
+    body > div {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+/* Styling for the menu bar: adding bg color (translucent black), flex display, and center aligning the containers*/
+.menu{
+    background-color: rgba(27, 23, 25, 0.7);
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    column-gap: 3%;
+}
+
+    /* styling the Title on the menu bar */
+    .title{
+        text-decoration: none;
+        align-items: center;
+        width: min-content;
+    }
+
+        /* Styling the link on the title that redirect back to the homepage */
+        .title a{
+
+            text-decoration: none;
+            color: #d4d6d5;
+            font-weight: bold;
+            font-size: 4vw;
+            font-family: Kostania;
+            line-height: 2.5vw;
+            margin: 0;
+            padding: 0.5vw 0;
+
+        }   
+    
+    /* Styling the buttons on the nav bar */
+    .link {
+        text-decoration: none;
+        font-family:Kostania;
+        background: none;
+        background-color: none;
+        border: none;
+        color: #d4d6d5;
+        font-size: 2vw;
+        cursor: pointer;
+        padding: 0.5vw;
+        padding-bottom: 0.15vw;
+        border-radius: 0.3vw;
+        translate: translateY(0);
+        transition: transform 50ms ease-in-out;
+        position: sticky;
+        width: max-content;
+
+
+    }
+
+    /* Styling the "get a quote" button on the very right of the menu bar */
+    .getAQuote {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        right: 4vw;
+    }
+
+        /* Styling the link for the Get a Quote button */
+        .getAQuote > a {
+            text-decoration: none;
+            font-family: Kostania;
+            background: none;
+            background-color: none;
+            border: none;
+            background-color: #2f4633;
+            color: #d4d6d5;
+            font-size: 2vw;
+            cursor: pointer;
+            padding: 0.4vw;
+            padding-top: 0.75vw;
+            border-radius: 5px;
+            translate: translateY(0);
+            transition: transform 150ms ease-in-out;
+            position: sticky;
+            border-radius: 0.5vw;
+        }
+
+        /* styling shift for when cursor hovers over the Get a Quote button */
+        .getAQuote > a:hover {
+            transform: scale(1.05, 1.05);  
+            background-color: #d4d6d5;
+            color: #2f4633;
+        }
+
+    /* Container for the dropdown menus, setting the display to flex and the position to relative*/
+    .dropdown {
+        position: relative;
+        display: flex;
+    }
+
+        /* styling the dropdown menus */
+        .dropdown-menu {
+            position: absolute;
+            width: max-content;
+            top: calc(100% + .25vw);
+            background-color: #d4d6d5;
+            padding: 0.75vw;
+            border-radius: 0.3vw;
+            box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            z-index: +10;
+            transform: translateY(-10px);
+            transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+        }
+
+        /* styling the links within the dropdown menus */
+        .dropdown-links{
+            font-size: 1.5vw;
+            text-decoration: none;
+            font-family:Kostania;
+            color: #2f4633;
+            row-gap: 4vw;
+            transition: color 50ms ease-in-out;
+        }
+
+        /* changing position and colour of the nav bar buttons when they are 
+        hovered on, or when their respective dropdown menu is open */
+        .dropdown.active > .link,
+        .link:hover{
+            background-color: #2f4633;
+            transform: translateY(-4px);
+        }
+
+        /* color change for links within the dropdown menu when hovered on */
+        .dropdown-links:hover{
+            color: #5ca769;
+        }
+
+        /* making the button and its respective dropdown menu appear when its clicked on */
+        .dropdown.active > .link + .dropdown-menu{
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+
+/* footer styling */
+footer {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 3rem;
+    background-color: rgba(27, 23, 25, 0.9);
+
+    margin-top: 4vw;
+
+    font-family: Neue June;
+    font-size: 1vw;
+
+    word-spacing: 0.1rem;
+    line-height: 1.4;
+    color: #7cb386;
+
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+    /* styling the links on the footer */
+    footer a{
+        text-decoration: none;
+        color: #d4d6d5;
+        transition: color 50ms ease-in-out;
+    }
+
+    /* removing the points from the unordered lists */
+    footer ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    /* changing colour of footer links when hovered on */
+    footer a:hover {
+        color: #7cb386;
+    }
+
+

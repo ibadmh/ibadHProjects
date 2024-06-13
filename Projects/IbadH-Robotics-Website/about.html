@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandela United Squadron</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- The top navigation header for the sites pages. This includes the directory for the pages, a logo with a home page link and an application form link -->
+    <div id="l-navBar" class="l-flex">
+        <!-- Home pg link and team logo -->
+        <a href="home.html">
+            <img src="Images/title.webp" alt="Team 7277 Logo" id="title">
+        </a>
+
+        <!-- menu - main 4 buttons for the non form pages -->
+        <div id="l-menu" class="l-flex">
+            <button onclick="window.location.href='about.html'">About</button>
+            <button onclick="window.location.href='team.html'">Team Structure</button>
+            <button onclick="window.location.href='branding.html'">Branding</button>
+            
+            <!-- dropdown menu for history of the club - dropdowns to show links to articles on the clubs history -->
+            <div class="dropdown">
+                <button class="navButton">History</button>
+
+                <div class="dropdownMenu l-flex">
+                    <a
+                        href="https://calgary.ctvnews.ca/calgary-kids-living-with-cancer-learn-about-robotics-at-camp-amazon-1.4609872">2019-20</a>
+                    <a
+                        href="https://drive.google.com/file/d/1l23pnSAd-9igd7EMUvhV2JAID5hQ_aik/view">2018-19</a>
+                    <a
+                        href="https://drive.google.com/file/d/1XH-y8GQDmfXnm1LfutBTBr3mTeZJMCCJ/view">2017-18</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- button that directs user to application form -->
+        <div id="l-navButton">
+            <button onclick="window.location.href='join.html'">Join the Squadron</button>
+        </div>
+    </div>
+    
+    <div id="main" class="l-flex">
+        <div>
+            <!-- the upper container for the page: this tab is consistent across all pages except home.html and result.html-->
+            <div id="l-topTabA">
+                <!-- vid background -->
+                <video autoplay muted loop id="myVideo">
+                    <source src="vid.mp4" type="video/mp4">
+                </video>
+                <!-- Page header title -->
+                <div class="content l-flex">
+                    <h1>About Us</h1>
+                </div>
+            </div>
+
+            <div id="nonVidMain" class="l-flex">
+                <div id="l-midTabA" class="l-flex">
+                    <!-- Slideshow container for the team awards -->
+                    <div class="awards">
+                        <div class="slideshow" aria-label="Image Slideshow">
+
+                            <!-- Full-width images with number and caption text -->
+                            <!-- they also have fade class which is the fade animation -->
+                            <div class="mySlides fade">
+                            <img src="Images/AwardsGallery/1.webp">
+                            </div>
+
+                            <div class="mySlides fade">
+                            <img src="Images/AwardsGallery/2.webp">
+                            </div>
+
+                            <div class="mySlides fade">
+                            <img src="Images/AwardsGallery/3.webp">
+                            </div>
+
+                            <div class="mySlides fade">
+                            <img src="Images/AwardsGallery/4.webp">
+                            </div>
+
+                            <div class="mySlides fade">
+                            <img src="Images/AwardsGallery/5.webp">
+                            </div>
+                            
+                            <div class="mySlides fade">
+                            <img src="Images/AwardsGallery/6.webp">
+                            </div>
+
+                            <div class="mySlides fade">
+                            <img src="Images/AwardsGallery/7.webp">
+                            </div>
+
+                        
+                            <!-- Next and previous buttons -->
+                            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+                        </div>
+                        <br>
+                        
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                            <span class="dot" onclick="currentSlide(7)"></span>
+
+                        </div>
+                    </div>
+
+                    <div> <!-- who we are container -->
+                        <h1>Who Are We</h1> <!-- title -->
+                        <p> <!--Paragraph tag with the about us information-->
+                            Team 7277 is a First Robotics Competition team based in Calgary, Canada at Nelson Mandela High School. <br> 
+                            Our goal and beliefs are to encourage STEM education and accessibility within our local community and the international community. <br>
+
+                            <br>We also support a variety of FIRST Technology Challenge Initiatives including our feeder schools teams: <br>
+                            
+                            <ul>
+                                <li>
+                                    Team 14713 - The Crossing Park Cobras 
+                                </li> 
+                                    
+                                <li>
+                                    Team 14715 - the Peter Lougheed Lords of Thunder 
+                                </li>
+                                
+                                <li>
+                                    Team 14716 - The Fox Trackers 
+                                </li>
+                                
+                                <li>
+                                    Team 14718 - The Ted Harisson Timberbots 
+                                </li>
+                                <li>
+                                    We also proudly run our own FTC Teams, 14717, and 15259 the Mandela United Squadron Second and Third Unit. <br>
+                                </li>
+                            </ul>
+                            <br>
+                            This website is a location for team resources that all FIRST Robotics Programs are welcome to use. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <!-- footer - has links for all pages (except form result) with home page link as title img -->
+            <div id="l-footer" class="l-flex">
+                <!-- Title logo thats clickable and directs you to the home page -->
+                <a href="home.html">
+                    <img src="Images/title.webp" alt="Team 7277 Logo" id="title">
+                </a>
+                <!-- Flex container wiht the links to all pages and more -->
+                <div class="l-flex">
+                    <ul>
+                        <!-- all page links -->
+                        <h2>Information</h2>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="branding.html">Branding</a></li>
+                        <li><a href="team.html">Team Structure</a></li>
+                        <li><a href="join.html">Join Us</a></li>
+                    </ul>
+                    <ul>
+                        <!-- all history article links -->
+                        <h2>History</h2>
+                        <li>
+                            <a href="https://calgary.ctvnews.ca/calgary-kids-living-with-cancer-learn-about-robotics-at-camp-amazon-1.4609872">2019-20</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1l23pnSAd-9igd7EMUvhV2JAID5hQ_aik/view">2018-19</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1XH-y8GQDmfXnm1LfutBTBr3mTeZJMCCJ/view">2017-18</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <!-- social media links -->
+                        <li>
+                            <a href="https://www.instagram.com/team.7277/" class="symbol">
+                                <img src="Images/Symbols/Instagram.webp" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/7277MandelaFRC" class="symbol">
+                                <img src="Images/Symbols/Twitter.webp" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@user-mx6wq2uo8i" class="symbol">
+                                <img src="Images/Symbols/Youtube.webp" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+
+
+</body>
+</html>

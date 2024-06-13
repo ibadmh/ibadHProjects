@@ -1,0 +1,50 @@
+/* changing footer list text colour when its hovered on */
+#l-footer li:hover {color: #7f7f7f}
+
+/* changing the colour and size of the menu button on hover, history button on hover and while in focus and dropdown menu elements on hover */
+#l-menu > button:hover, .navButton:hover, .navButton:focus, .dropdownMenu a:hover {   
+    color: #7f7f7f;
+    transform: scale(1.02,1.02);
+}
+
+/* swapping the bg color and colour and also increasing the size of the "join us" button on hover, home page top tab button on hover and submit button on hover */
+#l-navButton > button:hover, #l-topTabH button:hover, button[type="submit"]:hover {
+    color: black ;
+    background-color: white;
+    transform: scale(1.02,1.02);
+}
+
+/* making the dropdown appear when history button is clicked on */
+.dropdown > .navButton:focus + .dropdownMenu {
+    opacity: 1 !important;
+    transform: translateY(0);
+}
+
+/* making the next and back buttons on the slideshows appear when the container is hover on */
+#l-lowTabH:hover .prev, #l-lowTabH:hover .next, 
+.slideshow:hover .prev, .slideshow:hover .next {opacity: 1}
+
+/* making the next and prev buttons change colour and grow bigger when hoverd on specifically */
+.prev:hover, .next:hover {
+    color: black;
+    transform: scale(1.1);
+}
+  
+/* changing the colour of the active slideshow image dot and when its hovered on */
+.active, .dot:hover {
+    background-color: #99badd;
+  }
+
+/* setting up fade animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+    
+    @keyframes fade {
+        from {opacity: 0.7}
+        to {opacity: 1}
+    }
+
+/* giving input elemetns a border when they're focused on */
+    input:focus {border: .06vw solid black;}

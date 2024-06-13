@@ -1,0 +1,40 @@
+/*exclusive styling the contact us page */
+.main{
+    margin-top: 4vw;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.calgary, .edmonton, .northAb {
+    background-color: rgba(27, 23, 25, 0.7);
+    padding: 1vw;
+    margin: 1vw;
+    font-family: Neue June;
+    color: #d4d6d5;
+    border-radius: 0.5rem;
+    transition: all 200ms ease-in-out;
+}
+
+.main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+    word-spacing: 00.1rem;
+}
+
+.main img {
+    width: 25vw;
+    border-radius: 0.5rem;
+    opacity: 90%;
+}
+
+.main h2, .main ul {
+    margin: 1vw;
+}
+
+.calgary:hover, .edmonton:hover, .northAb:hover {
+    transform: translateY(-1vw);
+}

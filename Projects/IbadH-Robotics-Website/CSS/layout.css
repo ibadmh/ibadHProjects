@@ -1,0 +1,80 @@
+/* main tag for layout - contains the main content in the page - styling flex direction to column, 
+maximizing vertical space between and setting align items (horizontal width) to stretch
+also setting minimum height to the 100% of the viewport height */
+#main {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+/* setting the flex direction for the non video background content to vertical */
+#nonVidMain {
+    flex-direction: column;
+}
+
+/* l-flex class - used to set flex display and defaults for flex on certain elements */
+.l-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+/* navigation bar styling: setting position to be fixed on top of the scree, sizing it as the width of the viewport, and spacing the content within evenly */
+#l-navBar {
+    position: fixed;
+    width: 100vw;
+    justify-content: space-evenly;
+    padding: 0.7vw;
+    background-color: #c6dcf0;
+    z-index: 5;
+}
+
+/* setting background color for all the top tabs (except result page) to a translucent black to dim the vid background */
+#l-topTabH, #l-topTabA, #l-topTabT, #l-topTabB, #l-topTabJ {background-color: rgba(0, 0, 0, 0.65);}
+
+/* setting the results page top tab to black font colour with !important priority and center text align */
+#l-topTabR {
+    color: black !important;
+    text-align: center;
+}
+
+/* setting the hompage and about pag mid tabs to evenly space content and giving it paddings and top margin */
+#l-midTabH, #l-midTabA {
+    justify-content: space-evenly;
+    padding-top: 7vw;
+    margin: 7vw;
+    margin-top: 0;
+}
+
+/* setting the bottom tab homepage to have a 6% of viewport width gap and 5% of viewport width padding */
+#l-bottomTabH {
+    gap: 6vw;
+    padding-bottom: 5vw
+}
+
+/* styling the footer to have a lighter bg color, padding of 2vw and spacing the content evenly */
+#l-footer {
+    padding: 2vw;
+    background-color: #c6dcf0;
+    justify-content: space-evenly;
+}
+
+/* Styling the low tab on the home page which is the slideshow to have padding and lower the default gap for flex containers */
+#l-lowTabH {
+    padding-bottom: 7vw;
+    gap: 1vw;
+}
+
+/*  styling the branding page middle tab to have padding */
+#l-midTabB {padding: 5vw}
+
+/* styling the middle and bottom tab of the team strucutre page to have a 2vw top padding and 10vw side padding */ #l-bottomTabT, #l-midTabT {padding: 2vw 10vw 0 10vw}
+
+#l-bottomTabT {
+    display: grid;
+    grid-template-columns: repeat(12, 0.5fr);
+    grid-template-rows: 1.2fr 1.2fr 1fr 1fr;
+    gap: 2vw;
+}

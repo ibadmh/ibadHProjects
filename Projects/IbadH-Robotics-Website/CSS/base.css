@@ -1,0 +1,51 @@
+/* creating custom Oswald and Oswald lighter fonts */
+    @font-face {
+        font-family: Oswald;
+        src: url(fonts/Oswald-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: Oswald-Lighter;
+        src: url(fonts/Oswald-ExtraLight.ttf);
+    }
+
+/* all tag styling the defaults for all elements */
+* {
+    font-family: Oswald;
+    list-style-type: none;
+    font-size: 1vw ;
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    transition: all 110ms ease-in-out;
+    box-sizing: inherit;
+}
+
+/* image settings to improve website efficiency */
+img {
+    width: auto;
+    height: auto;
+}
+
+/* seting a and button tag cursors to pointer */
+a, button {cursor: pointer;}
+
+/* Styling h tags font weight/size */
+    h2 {font-weight: 100; font-size: 1.5vw;}
+
+    h1 { font-size: 2vw;}
+
+/* styling form tag on join page */
+    form {padding: 11vw}
+
+/* Styling label tags margin and font size to be 0.5% of the viewport width and 1.5% of the viewport width */
+    label {
+        margin-bottom: 0.5vw;
+        font-size: 1.5vw;
+    }
+
+/* Styling placeholder text color for inputs */
+    ::placeholder {color: #5c5c5c}

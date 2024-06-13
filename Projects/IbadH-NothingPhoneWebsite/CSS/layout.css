@@ -1,0 +1,67 @@
+/* LAYOUT: The purpose of the layout style is to determine the layout and organization of the page, 
+each section being a module. The overall styles for those modules and how they interact with one 
+another is set here. All layout classes or IDs have the "l-" prefix */
+
+/* l-flex class: this is a class used a lot throughout the HTML files as many modules 
+and divs are set to a flex display, which allows a flexible organization of elements. 
+This sets the default alignment and justification of the elements, including a gap of 3% of 
+the view width */
+.l-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw
+}
+
+/* Header styles: justifying the header to maximize space between the content, and also a minimal
+amount of padding and margins. */
+#l-header {
+    justify-content: space-between;
+    padding: 0.5vw;
+    margin: 1.5vw;
+}
+
+/* Home page Top Tab: this is the styling for the top module on the homepage, which is the tab 
+advertising the Nothing Phone(1). Setting the styling for that to a column flex display, 
+overriding to 0 gap, and 5.5vw margin*/
+#l-topTab {
+    flex-direction: column;
+    margin: 5.5vw;
+    gap: 0;
+}
+
+/* Home Page lower tab: Setting the style for the tab 
+with reviews of the phone and the company, settng a gap and padding of 10vw */
+#l-lowTab { 
+    gap: 10vw; 
+    padding: 10vw;
+}
+
+/* styling the bottom tab of the home page (The one introducing the founder), 
+the mid Tab of the Phone Page (displaying phone specs) 
+and the top Tab of the About Us Page (displaying the about us info). Styling those to have a 5vw padding */
+#l-bottomTab, #l-midTab2, #l-topTab3 { padding: 5vw;}
+
+/* Styling the footer on all pages, aligning the items to baseline, 
+meaning their top is all horizontally aligned to one level. Also adding a padding of 
+2% of the window width*/
+#l-footer { 
+    align-items: baseline; 
+    padding: 2vw;
+}
+
+/* Styling the top tab and bottom tab of the Phone page, the top one being the section displaying the cover
+of the phone page, and the tab showing the specs of the phone */
+#l-topTab2, #l-bottomTab2 { gap: 1vw; }
+
+/* Styling the Bottom tab of the phone page (the specs of the phone), the bottom tab of the About Us page
+(showing the top investors of the company) and the bottom tab of the audio page (the specs of the earbuds).
+ Styling those tabs to have a 2 view width padding and changing to a column flex direction */
+#l-bottomTab2, #l-bottomTab3, #l-bottomTab4 {
+    padding: 2vw;
+    flex-direction: column;
+}
+
+
+
+

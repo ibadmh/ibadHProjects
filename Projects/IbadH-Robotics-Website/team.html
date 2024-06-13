@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mandela United Squadron</title>
+        <link rel="stylesheet" href="CSS/style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <!-- The top navigation header for the sites pages. This includes the directory for the pages, a logo with a home page link and an application form link -->
+        <div id="l-navBar" class="l-flex">
+            <!-- Home pg link and team logo -->
+            <a href="home.html">
+                <img src="Images/title.webp" alt="Team 7277 Logo" id="title">
+            </a>
+
+            <!-- menu - main 4 buttons for the non form pages -->
+            <div id="l-menu" class="l-flex">
+                <button onclick="window.location.href='about.html'">About</button>
+                <button onclick="window.location.href='team.html'">Team Structure</button>
+                <button onclick="window.location.href='branding.html'">Branding</button>
+                
+                <!-- dropdown menu for history of the club - dropdowns to show links to articles on the clubs history -->
+                <div class="dropdown">
+                    <button class="navButton">History</button>
+
+                    <div class="dropdownMenu l-flex">
+                        <a
+                            href="https://calgary.ctvnews.ca/calgary-kids-living-with-cancer-learn-about-robotics-at-camp-amazon-1.4609872">2019-20</a>
+                        <a
+                            href="https://drive.google.com/file/d/1l23pnSAd-9igd7EMUvhV2JAID5hQ_aik/view">2018-19</a>
+                        <a
+                            href="https://drive.google.com/file/d/1XH-y8GQDmfXnm1LfutBTBr3mTeZJMCCJ/view">2017-18</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- button that directs user to application form -->
+            <div id="l-navButton">
+                <button onclick="window.location.href='join.html'">Join the Squadron</button>
+            </div>
+        </div>
+        
+        <div id="main" class="l-flex">
+            <div>
+                <!-- the upper container for the page: this tab is consistent across all pages except home.html and result.html-->
+                <div id="l-topTabT">
+                    <!-- vid background -->
+                    <video autoplay muted loop id="myVideo">
+                        <source src="vid.mp4" type="video/mp4">
+                    </video>
+                    <!-- Page header title -->
+                    <div class="content">
+                        <h1>Team Structure</h1>
+                    </div>
+                </div>
+
+                <!-- The content in this container is the main content for the page which is taken directly from the official NMHS robotics club branding guide -->
+                <div id="nonVidMain">
+                    <!-- Top tab with the introduction paragraph of the Team structure -->
+                    <div id="l-midTabT">
+                        <h1>Introduction</h1>
+                        <p>The 2019 FRC team structure will highlight specific roles
+                            for each team member for the duration of the year. This
+                            includes "prep' season (Late 2018). "build" season
+                            (January 2019 - February 2019) and "game" season (March
+                            2019 - April 2019). Each of these 3 time periods will be
+                            divided into two phases. Phase I will begin in September
+                            of 2018 and will last until the end of build season.
+                            Phase 2 will only apply to match days and competition
+                            durations. These phases allow the team to be organized
+                            and increase the efficiency for each role. They also
+                            ensures that team members have roles during both the
+                            building season and during competition.
+                        </p>
+                    </div>
+                    <!-- grid container with the entire team sturcture. Each module of the grid explains one of the teams that are part of the FRC structure -->
+                    <div id="l-bottomTabT">
+                        <!-- Team module one with details on the robot creation team - with a list of the requirements of each part of the team -->
+                        <div id="p1Robot">
+                            <h1>Phase 1.1: Robotics Systems Team</h1>
+                            <p>The Robotics System Team is a part of Phase I and are
+                                the main builders of the robot. They fabricate, wire
+                                and code the functions for the robot. This team
+                                includes the mechanical sub-team, electrical
+                                sub-team and programing sub-team. Here is a list of
+                                the skills required for these teams:</p>
+                            <div class="l-flex"> <!-- This div is used to put these two sections together and one below it-->
+                                <ul>
+                                    <h2>Mechanical Team</h2>
+                                    <li>Experience in Power Tools</li>
+                                    <li>Understanding and converting both Metric and
+                                        Imperial Units</li>
+                                    <li>Soldering Experience</li>
+                                    <li>Excellent Communication Skills</li>
+                                    <li>Machine Shop Knowledge</li>
+                                </ul>
+                                <ul>
+                                    <h2>Programming Team</h2>
+                                    <li>Logical problem-solving skills</li>
+                                    <li>Programming knowledge (languages)</li>
+                                    <li>Managing Information</li>
+                                    <li>Basic Math skills</li>
+                                    <li>Capable of research-oriented work</li>
+                                </ul>
+                            </div>
+                            <ul>
+                                <h2>Electrical Team</h2>
+                                <li>Basic understanding of electricity (Voltage,
+                                    Current. Resistance)</li>
+                                <li>Wire gauges (AWG)</li>
+                                <li>FIRST Specific Components (Battery. PDP. VRM.
+                                    PCM. Motor Controller, etc)</li>
+                                <li>Soldering Skills</li>
+                                <li>Crimping/Heat shrinking Skills</li>
+                            </ul>
+                        </div>
+                        <!-- team module 2 for support team -->
+                        <div id="p1Support"> 
+                            <h1>Phase 1.2: Robotics Support Team</h1>
+                            <p>The Robotics Support Team is a part of Phase I and support the Robotics System team. They are either the safety team who ensures that safety is the highest priority in the workspace or the CAD Designers that design CAD files for accuracy in measurement for the robot. Both these teams are essential before creating the robot and during the building of the robot. Here is a list of the skills required for these teams:
+                                Safety:
+                            </p>
+                            <ul>
+                                <h2>Safety:</h2>
+                                    <li>Requires fast, rational and calm abilities in highly stressed situations</li>
+                                    <li>Well adapted to any environment (locating fire extinguishers/exits)</li>
+                                    <li>Preferred First Aid training</li>
+                                    <li>Able to set an example and strict expectations for safety throughout the team
+                                        CAD Designers:</li> 
+                            </ul>
+                            <ul>        
+                                <h2>CAD Designers:</h2>
+                                    <li>Knowledge in CAD Design</li>
+                                    <li>Understanding both Metric and Imperial Units</li>
+                                    <li>Knowledge in basic Robot Design</li>
+                                    <li>Excellent with Measurements</li>
+                            </ul>
+                        </div>
+                        <!-- team module 3 for media team -->
+                        <div id="p1Media">
+                            <h1>Phase 1.3/2.1: Media Team</h1>
+                            <p>The Media Team is a part of Phase I/2 and does not have direct work with the building of the robot. This involves establishing and promoting the branding identity throughout the team, and creating apparel. designing the team website. creating a base on other online platforms, and recording our journey throughout the season. Here is a list of the skills required for these teams:</p>
+                            <ul>
+                                <h2>Branding Team</h2>
+                                <li>Experience in Adobe Illustrator, Cut Studio</li>
+                                <li>Sense of design, application in branding and promoting professionalism</li>
+                                <li>Organization and precision with design work</li>
+                                <li>Knowledge in typography. colour schemes and design elements</li>
+                            </ul>
+                            <ul>
+                                <h2>Communication Team:</h2>
+                                <li>Experience in web design (HTML)</li>
+                                <li>Organizational skills on professional platforms</li>
+                                <li>Social Media Access</li>
+                            </ul>
+                            <ul>
+                                <h2>Camera Crew</h2>
+                                <li>Capable of holding a weighted camera still</li>
+                                <li>Experience in recording</li>
+                            </ul>
+                        </div>
+                        <!-- team module 4 for business team -->
+                        <div id="p1Buss">
+                            <h1>Phase 1.4: Business Team</h1>
+                            <p>The Business Team is a part of Phase I and does not have direct work with the building of the robot. The main role of the business team is to find 
+                                sources of funding. This includes funding for robot parts and travel costs to 
+                                competitions. Here is a list of the skills required for these teams:
+                            </p>
+
+                            <ul>
+                                <h2>Budgeting Team</h2>
+                                <li>Business Knowledge (Budgeting spreadsheets)</li>
+                                <li>Proficient in excel/google sheets</li>
+                                <li>Capable of research-oriented work</li>
+                                <li>Locating potential sponsors and establishing sponsorships</li>
+                                <li>Communication with the rest of the team</li>
+                            </ul>
+
+                            <ul>
+                                <h2>Fundraising Team:</h2>
+                                <li>Creative Thinkers</li>
+                                <li>Experience with Fundraising</li>
+                                <li>Capable of outreaching</li>
+                            </ul>
+                            
+                        </div>
+                        <!-- team module 5 for drive team -->
+                        <div id="p2Drive"> 
+                            <h1>Phase 2.2: Drive Team</h1>
+                            <p>The Drive Team is a part of Phase 2 who will practice their needed skills for competition days. These rolls include the Drive Coach, Human Players, and Drivers. Drivers will be decided beforehand and will be done through a tryout. They are the ones who are mainly controlling the game. The Drive Coach will also be the lead strategist and work with other teams and their own to decide specific roles for each match. Here is a list of the skills required for this team:
+                                <br><br>Drive Coach: - Coordination, strategy. quick thinking and working under pressure
+                                <br>Driver(s): - Coordination, focused, able to listen to Drive Coach, able to follow game plan
+                                <br>Human Player: - Focused, able to follow game plan
+                                </p>
+                        </div>
+                        <!-- team module 6 for scout team -->
+                        <div id="p2Scout">
+                            <h1>Phase 2.3: Scouting Team</h1>
+                            <p>The Scout Team is a part of Phase 2 who will provide vital information for our drive team and strategists. The first type of scouter is to visit each team and gain 
+                                information about their potential strategy and robot capabilities. This will give us valuable information for specific matches. The second 
+                                type of scouter will watch games and record the usefulness of each team on the field. Here is a list of the skills required for this team:</p>
+                            
+                            <ul>
+                                <h2>Scouters:</h2>
+                                <li>Excellent communication skills</li>
+                                <li>Organizational skills</li>
+                                <li>Understanding of game mechanics and robot mechanics</li>
+                            </ul>
+                        
+                        </div>
+                  
+                        <!-- team module 7 for Pit team which is the team on site of the competition that are in charge of creating a smooth start -->
+                        <div id="p2Pit">
+                            <h1>Phase 2.4: Pit Team</h1>
+                            <p>The PIT Team is a part of Phase 2 and will construct the pit at the start of the competition. This team may have overlapping members. but is essential for an organized start. Here is a list of the skills required for this team:</p>
+                            <ul>
+                                <h2>Pit Team:</h2>
+                                <li>Organized and quick</li>
+                                <li>Knowledge on robot related parts, power tools and basic location of items</li>
+                                <li>Carry heavy loads and set up large racks</li>
+                            </ul>
+                        </div>
+                        <!-- team module 8 for spirit team -->
+                        <div id="p2Spirit">
+                            <h1>Phase 2.5: Spirit Team</h1>
+                            <p>The Spirit Team is a part of Phase 2 and will act as cheerleaders during games and other name-calling events.</p>
+                        </div> 
+                        <!-- team module 9 for safety team -->
+                        <div id="p2Safety">
+                            <h1>Phase 2.6: Safety Patrol</h1>
+                            <p>The Safety Patrol is a part of Phase 2 and will watch over the pit. This will be the safety lead and will ensure that safety guidelines are met at the pit, and transporting the robot to areas. This skills of this section is the same as the Safety Team.</p>
+                        </div>
+                        <!-- team module 10 for battery team in charge of making sure the robots power source is ready and properly installed -->
+                        <div id="p2Battery">
+                            <h1>Phase 2.7: Battery Team</h1>
+                            <p>The Battery Team is a part of Phase 2 and will make sure that batteries are charged and ready for matches. This team is one of the most important, and requires great attention. They will need to plug in the battery when needed to charge, and put it back in the robot prior to match.</p>
+                        </div>
+                        <!-- team module 11 for the prep team -->
+                        <div id="p2Prep">
+                            <h1>Phase 2.8: Match Preparation Team</h1>
+                            <p>The Match Prep Team is a part of Phase 2 and will mostly consist of the Robotics System Team. They must be on time and fix any potential problems on the robot and putting back loose parts. This includes bumper changing when eeded. The skills of the section will follow the Robotics Systems Sub- Teams skills.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- footer - has links for all pages (except form result) with home page link as title img -->
+            <div id="l-footer" class="l-flex">
+                <!-- Title logo thats clickable and directs you to the home page -->
+                <a href="home.html">
+                    <img src="Images/title.webp" alt="Team 7277 Logo" id="title">
+                </a>
+                <!-- Flex container wiht the links to all pages and more -->
+                <div class="l-flex">
+                    <ul>
+                        <!-- all page links -->
+                        <h2>Information</h2>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="branding.html">Branding</a></li>
+                        <li><a href="team.html">Team Structure</a></li>
+                        <li><a href="join.html">Join Us</a></li>
+                    </ul>
+                    <ul>
+                        <!-- all history article links -->
+                        <h2>History</h2>
+                        <li>
+                            <a href="https://calgary.ctvnews.ca/calgary-kids-living-with-cancer-learn-about-robotics-at-camp-amazon-1.4609872">2019-20</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1l23pnSAd-9igd7EMUvhV2JAID5hQ_aik/view">2018-19</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1XH-y8GQDmfXnm1LfutBTBr3mTeZJMCCJ/view">2017-18</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <!-- social media links -->
+                        <li>
+                            <a href="https://www.instagram.com/team.7277/" class="symbol">
+                                <img src="Images/Symbols/Instagram.webp" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/7277MandelaFRC" class="symbol">
+                                <img src="Images/Symbols/Twitter.webp" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@user-mx6wq2uo8i" class="symbol">
+                                <img src="Images/Symbols/Youtube.webp" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

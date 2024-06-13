@@ -1,0 +1,103 @@
+/* the styling for the Landscaping page */
+.main {
+    display: inline-flexbox;
+    border: 0.5vw;
+    margin: 1vw;
+    margin-top: 4vw;
+    color: #d4d6d5;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1 {
+    font-family: Kostania;
+    font-size: 5vw;
+    text-align: center;
+
+    background-color: rgba(27, 23, 25, 0.7);
+    padding: 4vw;
+    border-radius: 0.5vw;
+
+
+}
+
+/*stlying top tab for the service offering*/
+.whatWeOffer {
+    display: flex;
+    column-gap: 3vw;
+
+    background-color: rgba(27, 23, 25, 0.7);
+    padding: 2vw;
+    border-radius: 0.5vw;
+
+    align-items: center;
+    justify-content: left;
+
+}
+
+/* styles for all paragraph elements */
+.whatWeOffer p, .whyUs p {
+    width: 45vw;
+
+    /* setting up certain font family and also specific spacing an line height to make the text more readable and better looking */
+    font-family: Neue June;
+    word-spacing: 0.1rem;
+    line-height: 1.4;
+    font-size: 1.2vw;
+}
+
+.whatWeOffer h2, .whyUs h2{
+    width: 25vw;    
+    font-family: Kostania;
+    font-size: 4vw;
+    line-height: 3.5vw;
+    margin-right: 4vw;
+}
+
+.whatWeOffer ul{
+    font-family: Neue June;
+    word-spacing: 0.1rem;
+    line-height: 1.4;
+
+    font-size: 1vw;
+
+}
+
+/* bottom tab styling for the page */
+.whyUs {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgba(27, 23, 25, 0.7);
+    padding: 2vw;
+    border-radius: 0.5vw;
+    margin-top: 4vw;
+}
+
+.whyUs button {
+    text-decoration: none;
+    font-family: Kostania;
+    background-color: #2f4633;
+    color: #d4d6d5;
+    border: none;
+    font-size: 1.75vw;
+    border-radius: 0.25vw;
+    padding: 0.3vw;
+    padding-top: 0.6vw;
+    transition: all 150ms ease-in-out;
+    margin-left: 0.2vw;
+    margin-top: 2vw ;
+    margin-bottom: 0;
+}
+
+/* change styling on hover */
+.whyUs button:hover {
+    transform: scale(1.05, 1.05);
+    background-color: #d4d6d5;
+    color: #2f4633;
+}
+
+
+
+
+

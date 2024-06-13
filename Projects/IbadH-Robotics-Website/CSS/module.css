@@ -1,0 +1,323 @@
+/* setting the body and the non-video background content to the light blue based on the branding guide */
+body, #nonVidMain {background-color: #b0ceea;}
+
+/* stying the video background container to be at the back of the stack of elements, and be positioned at the very top and right of the page and also have a width of 100% of the window width */
+#myVideo{
+    z-index: -5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+}
+  
+/* styling the content that is specifically on top of the video background to have 100% height, 8vw padding, 14vw uppder padding specifically and setting text colour and alignment to white and center */
+.content {
+    height: 100%;
+    padding: 8vw;
+    padding-top: 14vw;
+    color: white;
+    text-align: center;
+}
+
+/* setting the title image width to 7vw */
+#title {width: 7vw}
+
+/* styling the dropdown menu for history button: 
+    - column flex display direction
+    - absolutely positioning it 57% of the width from the page's left side
+    - setting 4.3vw from the top of the page
+    - setting default opacity to invisible
+    - giving the menu a small shadow
+    - slightly rounding its border
+    - adding small amount of padding
+    - setting 150ms transition for all state changes
+    - transforming it by default to be 10px higher when its invisible */
+    .dropdownMenu { 
+        flex-direction: column; 
+        position: absolute;
+        left: 57%;
+        top: 4.3vw;
+        opacity: 0;
+        gap: 0;
+        background-color: #c6dcf0;
+        box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.3);
+        border-radius: 0.15vw;
+        padding: 0.7vw;
+        transition: all 150ms ease-in-out;
+        transform: translateY(-10px);
+    }
+
+/* styling the lists in the footer to be aligned to the top of the flex*/
+#l-footer div {
+    align-items: flex-start;
+}
+
+/* styling the topTab on the Form Result Page's header 1 element to have a 5vw font size */
+#l-topTabR h1 {font-size: 5vw;}
+
+/* styling the social media link images to have a 2vw width and 0.3 top margin */
+.symbol img {
+    width: 2vw;
+    margin-top: 0.3vw;
+}
+
+/* styling the h1 element on the home page topTab to have differing top and bottom margins and a 4vw font size */
+#l-topTabH h1 {
+    font-size: 4vw;
+    margin-top: 2.0vw;
+    margin-bottom: 1.0vw;
+}
+
+/* styling the p element on home page topTab to have a bottom margin, different font (from the default), 35vw container width and 1.5vw font size */
+#l-topTabH p {
+    font-size: 1.5vw;
+    margin-bottom: 2.7vw;
+    font-family: Oswald-Lighter;
+    width: 35vw;
+}
+
+/* the nav bar button, home page top tab button and the form submit button to have a specific padding for each side, black bg color, white text, and no border*/
+#l-topTabH button, #l-navButton button, button[type="submit"] {
+    padding: 1vw 1.8vw 1vw 1.8vw;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+/* styling the team logo images on the homepage to have a 10vw height */
+#l-midTabH img {height: 10vw}
+
+/* styling the bottom tab homepage grid display to have 6vw gap and a bottom padding of 5vw */
+#l-bottomTabH {
+    gap: 6vw;
+    padding-bottom: 5vw;
+}
+
+/* styling the homepage bottom tab div that is the image container to have a grid display width 3, 12vw columns and automatic rows with a max-content height. It also sets the column gap to
+3vw and the row gap to 2vw with aligning and justifying content to the center */
+#l-bottomTabH div {
+    display: grid;
+    grid-template-columns: repeat(3, 12vw);
+    grid-auto-rows: max-content;
+    column-gap: 3vw;
+    row-gap: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styling the brand sponsor logos to have a 12vw width */
+#l-bottomTabH img { 
+    width: 12vw;
+}
+
+/* styling all the topTabs (except home and result page) h1 tags to have a 4vw font-size */
+#l-topTabA h1, #l-topTabB h1, #l-topTabJ h1, #l-topTabT h1 {font-size: 4vw}
+
+/* styling the homepage slideshow p tag to have a content width of 18vw */
+#l-lowTabH p {width: 18vw}
+
+/* styling the slideshow container to have relative position, automatic margins and a pointer cursor when you hover it */
+.slideshow {
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+}
+
+/* styling the team photos slideshow container to have a 68vw */
+.team .slideshow {width: 68vw}
+
+/* styling slideshow img contaienrs to be invisible, evenly spacing the images and having 0 gap */
+.mySlides {
+    display: none;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+ 
+/* styling the images in the awards slideshow to have max height and 12vw width */
+.awards .mySlides img {
+    width: 12vw;
+    height: 100%;
+}
+
+/* styling all slideshow images to have a slight border radius */
+.mySlides img {border-radius: 0.15vw;}
+
+/* styling the team gallery image height to be 20vw */
+.team .mySlides img {
+    height: 20vw;
+}
+
+/* styling the back and next buttons for the slideshow
+    - pointer hover cursor
+    - 43% from the top of the div
+    - adding padding left and right
+    - translucent black colour
+    - bold font, with 2vw font-size
+    - slight border radius
+    - invisble default opacity and 400ms transition time for all changes */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 2vw;
+    border-radius: 0.15vw;
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+}
+
+/* styling the next button to be on the right of the container */
+.next { right: 0}
+
+/* styilng the dots for the number of images in the slideshow, too have a height and width, no padding, top margin, 
+white bg, circular shape and inline-blcok display. also a 100ms transition for the bg color */
+.dot {
+    cursor: pointer;
+    height: 0.5vw;
+    width: 0.5vw;
+    padding: 0;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 100ms ease-in-out;
+}
+
+/* stying the email and text form inputs
+    - max width with no border
+    - small bottom default border to a baby blue (based on branding guide)
+    - padding 0.5vw
+    - slight border radius
+    - lighter font for the placeholder
+    - 1.1vw font-size */
+input[type="email"], input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: .16vw solid #809cb9;
+    padding: 0.5vw;
+    border-radius: 0.15vw;
+    font-family: Oswald-Lighter;
+    font-size: 1.1vw;
+}
+
+/* styling the radio and checbox input tags to have 1.1vw height and slight left margin */
+input[type="radio"], input[type="checkbox"] {
+    height: 1.1vw;
+    margin-left: 0.5vw;
+}
+
+/* styling the interests and grade input labels to have small left margin, lighter font and 1.2vw font size */
+#interests label, #gr label{
+    margin-left: 0.5vw;
+    font-family: Oswald-Lighter;
+    font-size: 1.2vw;
+}
+
+/* giving the interest and grade selector top title label tags (not the ones on each option) to have regular font and 1.5vw font-size  */
+#interests > label, #gr > label {
+    font-family: Oswald;
+    font-size: 1.5vw;
+}
+
+/* giving the inputs on the interests input to have a small all around margin */
+#interests div {
+    margin: 0.5vw;
+}
+
+/* styling the form to have grid display width 4 columns, 3 equal rows and 1 larger row. Aligning and justifying content to cetner and adding 4vw gap */
+#gridForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 9fr;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+}
+
+/* specificly positioning all the elements in the form to have specific sizes and positions */
+    #fname {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+    }
+
+    #lname {
+        grid-row: 1 / 2;
+        grid-column: 3 / 5;
+    }
+
+    #gr {
+        grid-row: 2 / 4;
+        grid-column: 1 / 2;
+    }
+
+    #email {
+        grid-row: 2 / 3;
+        grid-column: 2 / 5;
+    }
+
+    #cbeEmail {
+        grid-row: 3 / 4;
+        grid-column: 2 / 5;
+    }
+
+    #interests {
+        align-self: baseline;
+        grid-row: 4 / 5;
+        grid-column: 1 / 4;
+    }
+
+/* styling the submit button to have differnt padding and font-szie (making them larger) than the default button settings set for the navBar, and homepage buttons */
+button[type="submit"] {
+    font-size: 1.5vw;
+    padding: 1vw 2vw 1vw 2vw;
+}
+
+/* styling the team structure page bottom tab h1 and h2 tags to have a 1.5 and 1.3 vw font sizes respectively. also making the h2 tag a heavier font weight */
+    #l-bottomTabT h1 {
+        font-size: 1.5vw;
+    }
+
+    #l-bottomTabT h2 {
+        font-size: 1.3vw;
+        font-weight: 500;
+    }
+
+/* stying the team page paragraph tabs to have light font weight and a slightly lighter than black colour */
+#l-midTabT p, #l-bottomTabT p, #l-bottomTabT li {
+    font-weight: 100;
+    color: #202020;
+}
+
+/* styling the unordered list margins on the team structure page to have a margin */
+#l-bottomTabT ul {
+    margin: 0.25vw;
+    margin-top: 1vw;
+}
+
+/* styling the list tag on the team structure page to have a margin */
+#l-bottomTabT li {
+    margin: 0.3vw;
+}
+
+/* positioning the elements in the bottomTabT grid container to have specific positions and sizes */
+    #p1Robot { grid-column: 1 / 7; }
+    #p1Support { grid-column: 7 / 13; }
+    #p1Media {grid-column: 1 / 7;}
+    #p1Buss { grid-column: 7 / 13;}
+    #p2Drive {grid-column: 1 / 5;}
+    #p2Scout {grid-column: 5 / 9;}
+    #p2Pit {grid-column: 9 / 13;}
+    #p2Spirit {grid-column: 1 / 4;}
+    #p2Safety {grid-column: 4 / 7;}
+    #p2Battery {grid-column: 7 / 10;}
+    #p2Prep {grid-column: 10 / 13;}
+
+
+
+
+
+
+

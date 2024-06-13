@@ -1,0 +1,52 @@
+/* BASE: the purpose of the base file is to set the default styles for
+ elements regardless of class, id or state, acting as thematic default for those elements */
+
+/* Setting the base style for every element, this is to act like a thematic defautl for all styling. 
+This includes the font, text decoration, margin, padding, etc.
+font-size and colour are also set to inherit so I can control their properties by only 
+changing the parent element's */
+* {
+    font-family:monospace;
+    text-decoration: none;
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    transition: all 100ms ease-in-out;
+    font-size: 1.2vw;
+}
+
+/* The styling for the main body, setting certain properties on a 
+flex display in order to position the footer correctly. Also setting the default bg colour */
+body {
+    /* Min height to 100vh so the footer always sits at the bottom of the page even w/o content */
+    min-height: 100vh;
+    
+    /* column direction to match the scrolling direction of the page */
+    flex-direction: column;
+    
+    /* justifying to space between so the header and footer 
+    are justified in a way that there is only space between them.
+    Also using important tag here to override other styles that affect the body tag (e.g. the l-flex class) */
+    justify-content: space-between  !important;
+
+    /* horizontally stretching the elements so they cover the entire width of the window */
+    align-items: stretch !important ;
+
+    /* no gap between elements */
+    gap: 0 !important;
+
+    /* background colour set as a light black */
+    background-color: #0f1012;
+}
+
+/* header 1 font size */
+h1 {font-size: 2.5vw;}
+
+/* removing all list pointer styles */
+ul { list-style-type: none; }
+
+/* setting paragraph font size */
+p { font-size: 1.6vw;}

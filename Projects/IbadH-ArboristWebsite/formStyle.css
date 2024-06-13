@@ -1,0 +1,154 @@
+/* styling all the elements on the form page */
+
+.form {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(27, 23, 25, 0.7);
+    width: max-content;
+    padding: 2vw;
+    margin: 1vw;
+    border-radius: 0.5vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #d4d6d5;
+    font-family: Neue June;
+    font-size: 1.1vw;
+}
+
+form > div {
+    max-width: 50vw;
+    padding: 1vw;
+}
+
+input {
+    text-decoration:none;
+    background:none;
+    margin-right: 1vw;
+
+    border: none;
+    border-bottom: 1px solid #d4d6d5;
+    color: #d4d6d5;
+    font-family: Neue June;
+    font-size: 1vw;
+
+    transition: all 300ms ease-in-out;
+}
+
+input#streetAd {
+    width: 9vw; 
+}
+
+input#postal {
+    width: 5vw
+}
+
+input#city{
+    width: 6vw;
+}
+
+form label, input {
+    margin-bottom: 1vw;
+    padding: 0.25vw;
+
+}
+
+::placeholder {
+    color: #4c8858;
+    font-size: 1vw;
+    font-family: Neue June;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5vw;
+    gap: 0.2vw;
+}
+
+.lastDiv {
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    
+}
+
+form button {
+    font-family: Kostania;
+    background-color: #2f4633;
+    color: white;
+    border: none;
+    padding: 0.5vw;
+    font-size: 2vw;
+    cursor: pointer;
+    padding-bottom: 0.2vw;
+    padding-top: 0.4vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    border-radius: 0.5vw;
+    transition: all 150ms ease-in-out;
+}
+
+form button:hover {
+    color: #2f4633;
+    background-color: #d4d6d5;
+    transform: scale(1.03,1.03);
+}
+
+.main {
+    margin-top: 4vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin: 1vw;
+    padding: 2vw;
+    border-radius: 0.5vw;
+
+    background-color: rgba(27, 23, 25, 0.7);
+
+}
+
+.main h1 {
+    text-align: center;
+    line-height: 0.9;
+    font-size: 3vw;
+    font-family: Kostania;
+    color: #d4d6d5;
+}
+
+.main > a {
+    text-decoration: none;
+    font-family: Kostania;
+    background: none;
+    border: none;
+    background-color: #2f4633;
+    color: #d4d6d5;
+    font-size: 1.5vw;
+    cursor: pointer;
+    padding: 0.4vw;
+    padding-top: 0.75vw;
+    border-radius: 5px;
+    position: sticky;
+    border-radius: 0.5vw;
+    transition: transform 150ms ease-in-out;
+
+}
+
+.main > a:hover {
+    transform: scale(1.03,1.03);
+    color: #2f4633;
+    background-color: #d4d6d5;   
+}
+
+
